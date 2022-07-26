@@ -1,0 +1,7 @@
+git init
+git remote add origin yoursshkey
+git add . //(gitNotes.txt)
+git commit -m "your message"
+git status
+git branch
+git push origin branchName

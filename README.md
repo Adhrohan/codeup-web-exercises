@@ -1,2 +1,2 @@
 # codeup-web-exercises
-Web Exercises... now, in Codeup!
+Web Exercises... now, in Codeup... Hurray!

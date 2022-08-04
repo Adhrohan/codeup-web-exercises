@@ -21,29 +21,24 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-var inputColor = analyzeColor()
-function analyzeColor(color) {
 
-    if (inputColor === "red") {
-         alert(inputColor + "Strawberries are red.");
+function analyzeColor(color){
+    if(color === "red"){
+        return console.log("Strawberries are red")
     }
-    else if (inputColor === "blue"){
-         alert(inputColor + "sky is blue.");
-    }
-    else if (inputColor === "green"){
-         alert(inputColor  + "grass are green.");
-    }
-    else{
-          alert("i don't know about that color.");
+    else if(color === "blue"){
+        return console.log("blue is the color of the sky")
+    }else {
+        return console.log("I don't know anything about " + color)
     }
 }
+analyzeColor("")
 
-analyzeColor(inputColor)
-// // Don't change the next two lines!
-// // These lines create two variables for you:
-// // - `colors`: a list of the colors of the rainbow
-// // - `randomColor`: contains a single random color value from the list (this
-// //                  will contain a different color every time the page loads)
+// Don't change the next two lines!
+// These lines create two variables for you:
+// - `colors`: a list of the colors of the rainbow
+// - `randomColor`: contains a single random color value from the list (this
+//                  will contain a different color every time the page loads)
 // var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 // var randomColor = colors[Math.floor(Math.random() * colors.length)];
 // /**
@@ -51,7 +46,8 @@ analyzeColor(inputColor)
 //  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
 //  * You should see a different message every time you refresh the page
 //  */
-//
+// analyzeColor (randomColor)
+
 // /**
 //  * TODO:
 //  * Comment out the code above, and refactor your function to use a switch-case statement
@@ -123,23 +119,23 @@ analyzeColor(inputColor)
 // //5. add and alert number to a function
 // //6. check if the number is negative or positive and return that value
 // //7. if user input is not a number then inform that the input was not a number. user input is NaN
-var isTrue = confirm("Would you like to give me a number?");
-if /*(isTrue === true)*/ (isTrue) {
-    var thatNumber = prompt("what number would you like to put?");
-    if (isNaN(thatNumber)) {
-        alert("this is no a number.")
-    } else {
-        if (thatNumber % 2 === 0) {
-            alert("that number is even")
-        } else if (thatNumber % 2 !== 0) {
-            alert("that number is odd")
-        }
-        var newNum = Number(thatNumber) + 100;
-        alert(`${thatNumber} + 100 = ${newNum}`)
-        if (thatNumber < 0) {
-            alert("That's a negetive number.")
-        } else if (thatNumber > 0) {
-            alert("That's a positive number.")
-        }
-    }
-}
+// var isTrue = confirm("Would you like to give me a number?");
+// if /*(isTrue === true)*/ (isTrue) {
+//     var thatNumber = prompt("what number would you like to put?");
+//     if (isNaN(thatNumber)) {
+//         alert("this is no a number.")
+//     } else {
+//         if (thatNumber % 2 === 0) {
+//             alert("that number is even")
+//         } else if (thatNumber % 2 !== 0) {
+//             alert("that number is odd")
+//         }
+//         var newNum = Number(thatNumber) + 100;
+//         alert(`${thatNumber} + 100 = ${newNum}`)
+//         if (thatNumber < 0) {
+//             alert("That's a negetive number.")
+//         } else if (thatNumber > 0) {
+//             alert("That's a positive number.")
+//         }
+//     }
+//}

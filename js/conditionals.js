@@ -1,87 +1,141 @@
-"use strict";
-
-/* ########################################################################## */
-
-/**
- * TODO:
- * Create a function named `analyzeColor` that accepts a string that is a color
- * name as input. This function should return a message which relates to the
- * color stated in the argument of the function. For colors you do not have
- * responses written for, return a string stating so
- *
- * Example:
- *  > analyzeColor('blue') // returns "blue is the color of the sky"
- *  > analyzeColor('red') // returns "Strawberries are red"
- *
- *
- *  > analyzeColor('cyan') // returns "I don't know anything about cyan"
- *
- * You should use an if-else-if-else block to return different messages.
- *
- * Test your function by passing various string literals to it and
- * console.logging the function's return value
- */
-
-function analyzeColor(color){
-    if(color === "red"){
-        return console.log("Strawberries are red")
-    }
-    else if(color === "blue"){
-        return console.log("blue is the color of the sky")
-    }else {
-        return console.log("I don't know anything about " + color)
-    }
-}
-analyzeColor("")
-
-// Don't change the next two lines!
-// These lines create two variables for you:
-// - `colors`: a list of the colors of the rainbow
-// - `randomColor`: contains a single random color value from the list (this
-//                  will contain a different color every time the page loads)
-// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-// var randomColor = colors[Math.floor(Math.random() * colors.length)];
-// /**
-//  * TODO:
-//  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
-//  * You should see a different message every time you refresh the page
-//  */
-// analyzeColor (randomColor)
-
-// /**
-//  * TODO:
-//  * Comment out the code above, and refactor your function to use a switch-case statement
-//  */
-//
-// /**
-//  * TODO:
-//  * Prompt the user for a color when the page loads, and pass the input from the
-//  * user to your `analyzeColor` function. Alert the return value from your
-//  * function to show it to the user.
-//  */
+// "use strict";
 //
 // /* ########################################################################## */
 //
 // /**
 //  * TODO:
-//  * Suppose there's a promotion in Walmart, each customer is given a randomly
-//  * generated "lucky number" between 0 and 5. If your lucky number is 0 you have
-//  * no discount, if your lucky number is 1 you'll get a 10% discount, if it's 2,
-//  * the discount is 25%, if it's 3, 35%, if it's 4, 50%, and if it's 5 you'll get
-//  * everything for free!.
-//  *
-//  * Write a function named `calculateTotal` which accepts a lucky number and total
-//  * amount, and returns the discounted price.
+//  * Create a function named `analyzeColor` that accepts a string that is a color
+//  * name as input. This function should return a message which relates to the
+//  * color stated in the argument of the function. For colors you do not have
+//  * responses written for, return a string stating so
 //  *
 //  * Example:
-//  * calculateTotal(0, 100) // returns 100
-//  * calculateTotal(4, 100) // returns 50
-//  * calculateTotal(5, 100) // returns 0
+//  *  > analyzeColor('blue') // returns "blue is the color of the sky"
+//  *  > analyzeColor('red') // returns "Strawberries are red"
 //  *
-//  * Test your function by passing it various values and checking for the expected
-//  * return value.
+//  *
+//  *  > analyzeColor('cyan') // returns "I don't know anything about cyan"
+//  *
+//  * You should use an if-else-if-else block to return different messages.
+//  *
+//  * Test your function by passing various string literals to it and
+//  * console.logging the function's return value
 //  */
 //
+// // function analyzeColor(color){
+// //     if(color === "red"){
+// //         return console.log("Strawberries are red")
+// //     }
+// //     else if(color === "blue"){
+// //         return console.log("blue is the color of the sky")
+// //     }else {
+// //         return console.log("I don't know anything about " + color )
+// //     }
+// // }
+// // analyzeColor("")
+//
+// // Don't change the next two lines!
+// // These lines create two variables for you:
+// // - `colors`: a list of the colors of the rainbow
+// // - `randomColor`: contains a single random color value from the list (this
+// //                  will contain a different color every time the page loads)
+// // var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// // var randomColor = colors[Math.floor(Math.random() * colors.length)];
+// // // /**
+// // //  * TODO:
+// // //  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
+// // //  * You should see a different message every time you refresh the page
+// // //  */
+// // analyzeColor(randomColor)
+//
+// // /**
+// //  * TODO:
+// //  * Comment out the code above, and refactor your function to use a switch-case statement
+// //  */
+// function analyzeColor(color) {
+//     switch (color) {
+//         case "red":
+//             return console.log("Strawberries are red");
+//             break;
+//         case "blue":
+//             return console.log("blue is the color of the sky");
+//             break;
+//         default :
+//             return console.log("I don't know anything about " + color );
+//             break;
+//     }
+// }
+// analyzeColor("red");
+// analyzeColor("blue");
+// // /**
+// //  * TODO:
+// //  * Prompt the user for a color when the page loads, and pass the input from the
+// //  * user to your `analyzeColor` function. Alert the return value from your
+// //  * function to show it to the user.
+// //  */
+// var userInput = prompt("what is your favorite color?");
+// var inputColor = analyzeColor(userInput)
+// if (userInput === "red"){
+//     alert("Strawberries are red")
+// }
+// else if (userInput === "blue"){
+//     alert("blue is the color of the sky")
+// }else{
+//     alert("I don't know anything about " + userInput )
+//
+// }
+//
+//
+//
+// // /* ########################################################################## */
+// //
+// // /**
+// //  * TODO:
+// //  * Suppose there's a promotion in Walmart, each customer is given a randomly
+// //  * generated "lucky number" between 0 and 5. If your lucky number is 0 you have
+// //  * no discount, if your lucky number is 1 you'll get a 10% discount, if it's 2,
+// //  * the discount is 25%, if it's 3, 35%, if it's 4, 50%, and if it's 5 you'll get
+// //  * everything for free!.
+// //  *
+// //  * Write a function named `calculateTotal` which accepts a lucky number and total
+// //  * amount, and returns the discounted price.
+// //  *
+// //  * Example:
+// //  * calculateTotal(0, 100) // returns 100
+// //  * calculateTotal(4, 100) // returns 50
+// //  * calculateTotal(5, 100) // returns 0
+// //  *
+// //  * Test your function by passing it various values and checking for the expected
+// //  * return value.
+//  */
+function calculateTotal(luckyNumber, totalAmount) {
+    switch (luckyNumber) {
+        case "0" :
+            console.log(totalAmount + " Better luck next time.")
+            break;
+        case "1" :
+            return console.log((totalAmount - totalAmount * .10) + " Better luck next time.")
+            break;
+        case "2" :
+            return console.log((totalAmount - totalAmount * .25 ) + " Better luck next time.")
+            break;
+        case "3" :
+            return console.log((totalAmount - totalAmount * .35  ) + " Better luck next time.")
+            break;
+        case "4" :
+            return console.log((totalAmount - totalAmount * .50  ) + " Better luck next time.")
+            break;
+        case "5" :
+            return console.log((totalAmount - totalAmount  )+ " it's free.")
+            break;
+        default :
+            return console.log("unkown error")
+            break;
+
+    }
+
+}
+calculateTotal(1,100)
 // /**
 //  * TODO:
 //  * Uncomment the line below to generate a random number between 0 and 5.

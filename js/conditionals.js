@@ -108,34 +108,27 @@
 // //  * Test your function by passing it various values and checking for the expected
 // //  * return value.
 //  */
+
 function calculateTotal(luckyNumber, totalAmount) {
     switch (luckyNumber) {
-        case "0" :
-            console.log(totalAmount + " Better luck next time.")
-            break;
-        case "1" :
-            return console.log((totalAmount - totalAmount * .10) + " Better luck next time.")
-            break;
-        case "2" :
-            return console.log((totalAmount - totalAmount * .25 ) + " Better luck next time.")
-            break;
-        case "3" :
-            return console.log((totalAmount - totalAmount * .35  ) + " Better luck next time.")
-            break;
-        case "4" :
-            return console.log((totalAmount - totalAmount * .50  ) + " Better luck next time.")
-            break;
-        case "5" :
-            return console.log((totalAmount - totalAmount  )+ " it's free.")
-            break;
+        case 0 :
+            return totalAmount + " Better luck next time."
+        case 1 :
+            return totalAmount * .10 + " Better luck next time."
+        case 2 :
+            return totalAmount * .25  + " Better luck next time."
+        case 3 :
+            return totalAmount * .35  + " Better luck next time."
+        case 4 :
+            return totalAmount * .50   + " Better luck next time."
+        case 5 :
+            return totalAmount   + " it's free."
         default :
-            return console.log("unkown error")
-            break;
-
+            return "unkown error"
     }
 
 }
-calculateTotal(1,100)
+console.log(calculateTotal(1,100))
 // /**
 //  * TODO:
 //  * Uncomment the line below to generate a random number between 0 and 5.
@@ -145,8 +138,8 @@ calculateTotal(1,100)
 //  * price before the discount was, and what their price after the discount is.
 //  */
 // // Generate a random number between 0 and 6
-// // var luckyNumber = Math.floor(Math.random() * 6);
-//
+// var luckyNumber = Math.floor(Math.random() * 6);
+// prompt("your total bill is " + tota)
 // /**
 //  * TODO:
 //  * Write some JavaScript that uses a `confirm` dialog to ask the user if they

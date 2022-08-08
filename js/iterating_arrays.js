@@ -77,7 +77,8 @@
     secondFunction([1, 2, 3, 4, 5]);
 
     function thirdFunction(arr) {
-        return console.log(arr.length-1);s
+        return console.log(arr.length-1);
     }
     thirdFunction([1, 2, 3, 4, 5]);
+
 })();

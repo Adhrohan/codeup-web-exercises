@@ -139,8 +139,9 @@ console.log(calculateTotal(1,100))
 //  */
 // // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
-// prompt("your total bill is " + tota)
+// prompt("your total bill is " + totalAmount)
 // /**
+
 //  * TODO:
 //  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
 //  * would like to enter a number. If they click 'Ok', prompt the user for a
@@ -158,7 +159,25 @@ console.log(calculateTotal(1,100))
 //  * Can you refactor your code to use functions?
 //  * HINT: The way we prompt for a value could be improved
 //  */
-//
+var userInput = confirm("Would you like to enter a number?")
+if (userInput === true){
+    console.log(prompt("Enter your number"));
+}
+if(userInput % 2 === 0) {
+    alert("the number is even.");
+}else {
+    alert("the number is odd.");
+    if (userInput * (-1) === -userInput ){
+    alert("the number is positve.");}
+    else{
+    alert("the number is negetive");
+
+    }
+    alert( userInput + 100);
+
+
+
+
 // //1. make a confirm that ask if a user would like to input a number.
 // //2. assign confirm variable that will be a boolean.
 // //3. if confirm variable is true then prompt a user for a number and store it in a variable and wrap number.
@@ -185,4 +204,4 @@ console.log(calculateTotal(1,100))
 //             alert("That's a positive number.")
 //         }
 //     }
-//}
+// }

@@ -1,0 +1,16 @@
+div{
+    display: flex;
+}
+@media screen and (min-width: 500px){
+    p{
+        color: red;
+    }
+    div{
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 500px){
+    div{
+        flex-direction: column;
+    }
+}

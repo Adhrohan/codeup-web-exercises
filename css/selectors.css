@@ -38,10 +38,11 @@ h2{
     text-decoration: underline;
 }
 body{
-    background-color: bisque;
+    background-color: white;
     background-image: url(../img/codeup-arrow.png);
-    background-size: 625px 625px;
+    background-size: cover;
     font-family: Avenir;
+
 }
 
 ul{

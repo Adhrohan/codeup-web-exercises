@@ -8,7 +8,7 @@
 /*  selector for all "h1" elements
     that are a descendent of id="container"
     and have a class of "fancy-header" */
-h1 {
+#container h1.fancy-header {
     color: blue;
     text-decoration: underline;
 }
@@ -41,7 +41,7 @@ body{
     background-color: white;
     background-image: url(../img/codeup-arrow.png);
     background-size: cover;
-    font-family: Avenir;
+    font-family: 'Avenir',sans-serif;
 
 }
 

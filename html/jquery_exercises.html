@@ -8,21 +8,27 @@
     <title>jquery exercise</title>
 </head>
 <body>
-    <h1 id="codeup">Example Page</h1>
-    <div class="important">
-        <h3>NOTICE</h3>
-        <p>This is an important message!</p>
-    </div>
-    <div class="not-important">
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, incididunt ut <span class="important">labore et dolore magna aliqua.</span>, quis ut aliquip ex ea commodo.</p>
-    </div>
-    <p class="important">This is also very important.</p>
-
+<div class="important">
+    <h1 id="header">This is h1</h1>
+    <p id="paragraph">This is my paragraph.</p>
+    <ul>
+        <li class="codeup">list 1</li>
+        <li class="codeup">list 2</li>
+        <li class="codeup">list 2</li>
+    </ul>
+</div>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous">
+</script>
+<script>
+    // alert($("#header").html());
+    // $alert(jQuery("#content").html());
+    // $(".codeup").css("border","1px solid red")
+    $("li").css("font-size", "20px");
+    $("h1, p, li").css("background","yellow");
+    alert($("h1").html());
 </script>
 </body>
 </html>

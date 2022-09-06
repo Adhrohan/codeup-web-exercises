@@ -18,17 +18,30 @@
     </ul>
 </div>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"
-        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-        crossorigin="anonymous">
-</script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script>
+    //selectors exercise
     // alert($("#header").html());
     // $alert(jQuery("#content").html());
     // $(".codeup").css("border","1px solid red")
-    $("li").css("font-size", "20px");
-    $("h1, p, li").css("background","yellow");
-    alert($("h1").html());
+    // $("li").css("font-size", "20px");
+    // $("h1, p, li").css("background","yellow");
+    // alert($("h1").html());
+
+    $("h1").click(function () {
+        $(this).css("background-color", "blue")
+    })
+
+    $("p").dblclick(function () {
+        $(this).css("font-size", "18px")
+
+    })
+    $("li").hover(function () {
+        $(this).css("color", "red")
+    }, function () {
+        $(this).css("color", "black")
+    });
+
 </script>
 </body>
 </html>

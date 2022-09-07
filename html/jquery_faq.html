@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jquery_faq</title>
+    <style>
+        .invisible{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+<p>FAQs about national parks:</p>
+
+<h3>First National park</h3>
+<ul>
+    <li>facts 1</li>
+    <li>facts 2</li>
+    <li>facts 3</li>
+    <li>facts 4</li>
+</ul>
+
+<h3>Second National park</h3>
+<ul>
+    <li>facts 1</li>
+    <li>facts 2</li>
+    <li>facts 3</li>
+    <li>facts 4</li>
+</ul>
+
+<h3>Third National park</h3>
+<ul >
+    <li>facts 1</li>
+    <li>facts 2</li>
+    <li>facts 3</li>
+    <li>facts 4</li>
+</ul>
+<button type="button" id="liButton">click to make list yellow</button>
+
+<h2>Using Traversing Function</h2>
+<div id="div1">div1</div>
+<button type="button" id="div1Button">Swap</button>
+
+<div id="div2">div2</div>
+<button type="button" id="div2Button">Swap</button>
+
+<div id="div3">div3</div>
+<button type="button" id="div3Button">Swap</button>
+
+
+
+<dl>
+    <dt>Question 1</dt>
+    <dd class="invisible">Answer 1</dd>
+
+    <dt>Question 2</dt>
+    <dd class="invisible">Answer 2</dd>
+
+    <dt>Question 3</dt>
+    <dd class="invisible">Answer 3</dd>
+
+    <dt>Question 4</dt>
+    <dd class="invisible">Answer 4</dd>
+
+    <dt>Question 5</dt>
+    <dd class="invisible">Answer 5</dd>
+
+    <dt>Question 6</dt>
+    <dd class="invisible">Answer 6</dd>
+
+    <dt>Question 7</dt>
+    <dd class="invisible">Answer 7</dd>
+
+    <dt>Question 8</dt>
+    <dd class="invisible">Answer 8</dd>
+
+    <dt>Question 9</dt>
+    <dd class="invisible">Answer 9</dd>
+
+    <dt>Question 10</dt>
+    <dd class="invisible">Answer 10</dd>
+</dl>
+
+<button type="button" id="showBtn">Show my answer</button>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    $("#showBtn").click(function () {
+        $("dd").toggleClass("invisible")
+    });
+
+    $("dt").click(function (){
+        $(this).css("background", "skyblue")
+    });
+
+    $("#liButton").click(function () {
+        $("ul").each(function (index, element) {
+        $(element).children().last().css("background-color", "yellow");
+        })
+    });
+
+    $("h3").click(function () {
+        $(this).next().children().css("font-weight", "bold")
+    });
+
+    $("li").click(function () {
+        $(this)
+            .parent()
+            .children()
+            .first()
+            .css("color", "blue");
+    });
+
+
+</script>
+</body>
+</html>

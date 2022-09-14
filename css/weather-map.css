@@ -1,0 +1,31 @@
+.container{
+    margin: auto;
+}
+.headerrow{
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+.navBarrow{
+    height: 50px;
+}
+.daysrow{
+    height: 300px;
+}
+.days{
+    height: 300px;
+}
+.weatherApp{
+    font-size: xx-large;
+}
+.currentCity{
+    font-size: large ;
+}
+.mapBoxrow{
+    height: 00px;
+}
+#map{
+    height: 300px;
+    width: 100%;
+}

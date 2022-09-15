@@ -11,9 +11,17 @@
     height: 50px;
 }
 .daysrow{
+    margin: 30px 0 30px 0;
     height: 300px;
 }
+.date{
+    height: 30px;
+    background-color: lightblue;
+    border: 1px lightgray solid;
+}
 .days{
+    margin: 0 10px 0 10px;
+    border: lightgray 1px solid;
     height: 300px;
 }
 .weatherApp{

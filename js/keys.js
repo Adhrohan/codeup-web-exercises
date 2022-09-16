@@ -1,1 +1,2 @@
 const mapBox_token = "pk.eyJ1IjoiYWRocm9oYW4iLCJhIjoiY2w3dXpzbDV0MDZ5ODNxdGwwdWVndDc1ZSJ9.Bjecby4rrZ8SwUSqYaisdQ";
+const weather_app_id = "ec0952646a183ee09248b493c60521a4"
